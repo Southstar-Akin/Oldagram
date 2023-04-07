@@ -166,4 +166,8 @@ div.bottom{
     section.post{
         padding-bottom: 10px;
     }
+    .main-pic{
+        display: flex;
+        justify-content: center;
+    }
 }
