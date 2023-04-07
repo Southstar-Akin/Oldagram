@@ -12,7 +12,6 @@ header{
     width: 375px;
     height: 67px;
     margin: auto;
-    background-color: white;
     border-bottom: 1px solid #C6C6C6;
 }
 nav{
@@ -23,9 +22,10 @@ nav{
     padding: 0px 15px;
     align-items: center;
 }
-.logo{
+#logo{
     height: 54px;
     width: 137px;
+    fill: black;
 }
 .profile-pic{
     height: 34px;
@@ -35,7 +35,6 @@ nav{
 main{
     width: 375px;
     height: auto;
-    background-color: white;
     margin: auto;
     padding: 10px 0px;
 }
@@ -133,7 +132,9 @@ div.bottom{
 .unliked{
     stroke: black;
 }
-
+.unliked-dark{
+    stroke: white;
+}
 .liked{
     stroke: red;
     fill: red;
@@ -143,7 +144,25 @@ div.bottom{
     display: none;
 }
 
-
+.body-dark{
+    background-color: black;
+    color: white;
+    fill: white;
+    stroke: white;
+}
+.invertsvg{
+    color: black;
+    stroke: black;
+    stop-color: black;
+}
 .borders{
     border: 1px dashed black;
+}
+@media screen and (max-width: 760px) {
+    nav, main{
+        width: 100%;
+    }
+    section.post{
+        padding-bottom: 10px;
+    }
 }
