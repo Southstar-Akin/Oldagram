@@ -167,7 +167,6 @@ div.bottom{
         padding-bottom: 10px;
     }
     .main-pic{
-        display: flex;
-        justify-content: center;
+    width: inherit;
     }
 }
