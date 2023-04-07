@@ -37,12 +37,13 @@ main{
     height: auto;
     background-color: white;
     margin: auto;
-    padding-top: 10px;
+    padding: 10px 0px;
 }
 section.post{
     width: inherit;
     height: inherit;
     min-height: 545px;
+;
 }
 .profile{
     width: 348px;
@@ -62,17 +63,56 @@ section.post{
 }
 .main-pic{
     margin-top: 10px;
+    position: relative;
+
+}
+.main-pic img{
+    z-index: 1;
+}
+
+@keyframes like {
+    0% {
+      opacity: 1;
+      transform: scale(0);
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    75%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+
+.main-pic svg.lick{
+    z-index: 2;
+    position: absolute;
+    top: 140.5px;
+    left: 145px;
+    animation: like 1.5s linear 1;
+    opacity: 0;
 }
 .main-pic img, .main-pic{
     width: inherit;
 }
 div.bottom{
     width: 346px;
-    height: 78px;
+    min-height: 78px;
+    max-height: 88px;
     margin: 21px 19px 16px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    row-gap: 10px;
 }
 
 .icons{
@@ -99,7 +139,9 @@ div.bottom{
     fill: red;
 }
 
-
+.none{
+    display: none;
+}
 
 
 .borders{

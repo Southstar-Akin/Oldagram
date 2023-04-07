@@ -1,6 +1,9 @@
 const like = document.getElementsByClassName('like')
 const likeS = document.getElementsByClassName('likes')
 let mainSection = document.getElementById("main")
+const mage = document.getElementsByClassName('mage')
+const heart = document.getElementsByClassName('lick')
+
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -45,7 +48,8 @@ function render() {
             </div>
         </div>
         <div class="main-pic">
-            <img src="${posts[i].post}" alt="${posts[i].name}">
+            <img src="${posts[i].post}" alt="${posts[i].name}" class="mage">
+            <svg width="75" height="75" viewBox="0 0 27 25" fill="white" xmlns="http://www.w3.org/2000/svg" class="lick none"><path d="M3.84587 13.5811L12.7963 23.2159C13.2572 23.712 14.0424 23.712 14.5033 23.2159L23.4537 13.5811C25.9149 10.9318 25.9149 6.63634 23.4537 3.987C20.9926 1.33767 17.0022 1.33767 14.5411 3.987L14.5033 4.02764C14.0424 4.52375 13.2572 4.52375 12.7963 4.02764L12.7585 3.987C10.2974 1.33767 6.30704 1.33767 3.84587 3.987C1.38471 6.63634 1.38471 10.9318 3.84587 13.5811Z" stroke-width="2.32996"/></svg>
         </div>
         <div class="bottom">
             <div class="icons">
@@ -82,7 +86,13 @@ function add(){
 
     like[1].addEventListener("click", () =>{liking(1)})
 
-    like[2].addEventListener("click", () =>{liking(2)})
+    like[2].addEventListener("click", () => {liking(2)})
+
+    mage[0].addEventListener("dblclick", () => {likeimage(0)})
+
+    mage[1].addEventListener("dblclick", () => {likeimage(1)})
+
+    mage[2].addEventListener("dblclick", () => {likeimage(2)})
 
 }
 function liking(i){
@@ -102,6 +112,13 @@ function liking(i){
 }
 }
 
-
 render()
 add()
+
+function likeimage(i){
+    heart[i].classList.toggle('none');
+    setTimeout(() => {
+    heart[i].classList.add('none')
+    }, 1500);
+    liking(i)
+}
