@@ -153,6 +153,7 @@ div.bottom{
 .invertsvg{
     color: black;
     stroke: black;
+    fill: black;
     stop-color: black;
 }
 .borders{

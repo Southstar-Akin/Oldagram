@@ -53,7 +53,7 @@ function render() {
         </div>
         <div class="main-pic">
             <img src="${posts[i].post}" alt="${posts[i].name}" class="mage">
-            <svg width="75" height="75" viewBox="0 0 27 25" fill="white" xmlns="http://www.w3.org/2000/svg" class="lick none"><path d="M3.84587 13.5811L12.7963 23.2159C13.2572 23.712 14.0424 23.712 14.5033 23.2159L23.4537 13.5811C25.9149 10.9318 25.9149 6.63634 23.4537 3.987C20.9926 1.33767 17.0022 1.33767 14.5411 3.987L14.5033 4.02764C14.0424 4.52375 13.2572 4.52375 12.7963 4.02764L12.7585 3.987C10.2974 1.33767 6.30704 1.33767 3.84587 3.987C1.38471 6.63634 1.38471 10.9318 3.84587 13.5811Z" stroke-width="2.32996"/></svg>
+            <svg width="75" height="75" viewBox="0 0 27 25" fill="white" xmlns="http://www.w3.org/2000/svg" class="lick none"><path d="M3.84587 13.5811L12.7963 23.2159C13.2572 23.712 14.0424 23.712 14.5033 23.2159L23.4537 13.5811C25.9149 10.9318 25.9149 6.63634 23.4537 3.987C20.9926 1.33767 17.0022 1.33767 14.5411 3.987L14.5033 4.02764C14.0424 4.52375 13.2572 4.52375 12.7963 4.02764L12.7585 3.987C10.2974 1.33767 6.30704 1.33767 3.84587 3.987C1.38471 6.63634 1.38471 10.9318 3.84587 13.5811Z" stroke-width="2.32996" stroke="white"/></svg>
         </div>
         <div class="bottom">
             <div class="icons">
@@ -145,9 +145,6 @@ function liking(i){
 }
 }
 
-render()
-add()
-
 function likeimage(i){
     heart[i].classList.toggle('none');
     setTimeout(() => {
@@ -155,3 +152,6 @@ function likeimage(i){
     }, 1500);
     liking(i)
 }
+
+render()
+add()
