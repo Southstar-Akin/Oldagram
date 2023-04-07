@@ -1,5 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
+header{
+    width: 375px;
+    height: 67px;
+    margin: auto;
+    background-color: white;
+    border-bottom: 1px solid #C6C6C6;
+}
+nav{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    align-items: center;
+}
+.logo{
+    height: 54px;
+    width: 137px;
+}
+.profile-pic{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+}
+main{
+    width: 375px;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    padding-top: 10px;
+}
+section.post{
+    width: inherit;
+    height: inherit;
+    min-height: 545px;
+}
+.profile{
+    width: 348px;
+    height: 34px;
+    margin: 0px 10px;
+    display: flex;
+}
+.det{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-left: 7px;
+}
+.name, .username, .likes{
+    font-weight: 700;
+    font-size: 13px;
+}
+.main-pic{
+    margin-top: 10px;
+}
+.main-pic img, .main-pic{
+    width: inherit;
+}
+div.bottom{
+    width: 346px;
+    height: 78px;
+    margin: 21px 19px 16px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icons{
+    display: flex;
+    width: 104.34px;
+    justify-content: space-between;
+}
+
+.icons svg{
+    transition: all 0.3s linear;
+}
+
+.icons svg:active,
+.icons svg:focus{
+    transform: scale(0.7);
+}
+
+.unliked{
+    stroke: black;
+}
+
+.liked{
+    stroke: red;
+    fill: red;
+}
+
+
+
+
+.borders{
+    border: 1px dashed black;
+}
