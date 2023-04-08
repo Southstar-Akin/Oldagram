@@ -160,7 +160,7 @@ div.bottom{
     border: 1px dashed black;
 }
 @media screen and (max-width: 760px) {
-    nav, main{
+    header, main{
         width: 100vw;
     }
     section.post{
