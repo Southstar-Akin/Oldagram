@@ -95,8 +95,11 @@ section.post{
 .main-pic svg.lick{
     z-index: 2;
     position: absolute;
-    top: 140.5px;
-    left: 145px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     animation: like 1.5s linear 1;
     opacity: 0;
 }
